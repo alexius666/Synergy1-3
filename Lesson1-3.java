@@ -13,15 +13,15 @@ class Main {
         else
             if ((a==2) || (a==3)) ans=true;
         else
-            if (a<=1 || a%2==0 || a%3==0) ans=false;
+            if (a<=1 || a%2==0 || a%3==0) ans = false;
             else {
                 for (int i = 5; i * i <= a; i += 6) {
-                    if (a % i == 0 || a % (i + 2) == 0) ans=false;
+                    if (a%i == 0 || a% (i+2) == 0) ans=false;
                 }
                 ans=true;
             }
 
-        if (ans && a!=1) System.out.print(" простое.");
+        if (ans) System.out.print(" простое.");
         if (!ans && a!=1) System.out.print(" составное.");
     }
 
